@@ -7,4 +7,10 @@ AnimatorOverrideController:
   m_PrefabInternal: {fileID: 0}
   m_Name: FerretRed
   m_Controller: {fileID: 9100000, guid: 2c165920d3ef2614181cd8011b57bb95, type: 2}
-  m_Clips: []
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 00ab539cf43be404e870e91130b994be, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 492932af9c431974c945f8d7c139d183, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: cc815f5abfebd7b4499258d7f3a01849, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: fef26490b8c244644abec313a6359907, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: b32e9fbe4416c5c49829c6ac1aa58847, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 070fcdc69de9b0d47babba0686477e91, type: 2}
