@@ -1,10 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PoolingUnidades : MonoBehaviour {
 
-    public static ArrayList unidades = new ArrayList();
+    public static List<GameObject> unidades = new List<GameObject>();
     public GameObject[] prefabsUnidades;
     public GameObject[] rutas;
     public Transform posicionInicial;
@@ -36,8 +37,15 @@ public class PoolingUnidades : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
+        if (unidades.Count == 0)
+        {
+            SceneManager.LoadScene("Winner");
+        }
 	}
 }
+
+
+
 /*     GameObject unidad = GameObject.Find("Ferret2"); //GameObject.FindWithTag("unidad");
        GameObject temp;
        Vector3 incremento = new Vector3( -2 , 0);

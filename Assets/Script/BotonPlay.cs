@@ -5,17 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class BotonPlay : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 
-    private void OnMouseDown()
+    public void CargarJuego()
     {
         // Debug.Log("Click");
         SceneManager.LoadScene("Nivel1");

@@ -49,10 +49,12 @@ public class Unidad : MonoBehaviour {
         // Si la vida es igual a cero se destruye este gameobject unidad
         if (vida <= 0)
         {
-            Destroy(this.gameObject);
+            PoolingUnidades.unidades.Remove(transform.parent.gameObject);
+            Destroy(transform.parent.gameObject);
+
         }
 
-       
+        
 
     }
 
