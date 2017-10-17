@@ -12,6 +12,7 @@ public class Meta : MonoBehaviour {
         if (other.CompareTag("unidad"))
         {
             ferret +=1;
+            GetComponent<AudioSource>().Play();
             
             if (ferret == 5)
             {
