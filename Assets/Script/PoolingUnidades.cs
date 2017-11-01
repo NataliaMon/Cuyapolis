@@ -10,9 +10,13 @@ public class PoolingUnidades : MonoBehaviour {
     public GameObject[] rutas;
     public Transform posicionInicial;
     public float factorIncremento;
+    public bool hayTorres;
+    public bool yaInstancieUnidades;
+    public string proximaEscena;
 
-    // Use this for initialization
-    void Start () {
+
+
+    void InstanciarUnidades () {
 
         Vector3 incremento = Vector3.left * factorIncremento;
 
@@ -27,21 +31,30 @@ public class PoolingUnidades : MonoBehaviour {
 
                 unidades.Add(nuevaUnidad);
 
-
             }
 
         }
+        yaInstancieUnidades = true;
     
 }
 	
 	// Update is called once per frame
 	void Update () {
-		
-        if (unidades.Count == 0)
+
+        if (hayTorres && !yaInstancieUnidades)
         {
-            SceneManager.LoadScene("Winner");
+            InstanciarUnidades();
         }
-	}
+
+
+        if (yaInstancieUnidades && unidades.Count == 0)
+        {
+            SceneManager.LoadScene(proximaEscena);
+        }
+
+        
+
+    }
 }
 
 

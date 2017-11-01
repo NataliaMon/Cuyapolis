@@ -10,7 +10,7 @@ public class BotonPlay : MonoBehaviour {
     public void CargarJuego()
     {
         // Debug.Log("Click");
-        SceneManager.LoadScene("Nivel1");
+        SceneManager.LoadScene("Instrucciones");
         
     }
 }

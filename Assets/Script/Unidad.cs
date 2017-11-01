@@ -46,6 +46,8 @@ public class Unidad : MonoBehaviour {
             animator.SetFloat("y", Mathf.Sign((posicion_siguiente - transform.position).y));
         }
 
+        
+
         // Si la vida es igual a cero se destruye este gameobject unidad
         if (vida <= 0)
         {

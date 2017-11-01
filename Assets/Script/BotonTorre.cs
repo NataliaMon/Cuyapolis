@@ -10,7 +10,7 @@ public class BotonTorre : MonoBehaviour {
     {
         Instantiate(torre, transform.parent.position, Quaternion.identity);
         Destroy(transform.parent.gameObject);
-
+        FindObjectOfType<PoolingUnidades>().hayTorres = true;
 
     }
 

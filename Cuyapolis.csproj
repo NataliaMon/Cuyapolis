@@ -79,9 +79,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Script\Barra de Vida.cs" />
+    <Compile Include="Assets\Script\BotonContinuar.cs" />
     <Compile Include="Assets\Script\BotonInicio.cs" />
     <Compile Include="Assets\Script\BotonPlay.cs" />
     <Compile Include="Assets\Script\BotonTorre.cs" />
+    <Compile Include="Assets\Script\Coyos.cs" />
+    <Compile Include="Assets\Script\InicioJuego.cs" />
     <Compile Include="Assets\Script\LogicaPonerTorre.cs" />
     <Compile Include="Assets\Script\Meta.cs" />
     <Compile Include="Assets\Script\PoolingUnidades.cs" />

@@ -22,7 +22,8 @@ public class Torre : MonoBehaviour {
             angle *= Mathf.Sign((other.transform.position - transform.position).y);
             
             //Crear una nueva instancia (copia) del objeto proyectilprefab y meterla a la escena, en la posicion de origen de proyectil; dar rotacion en el angulo dado en el eje z
-            Proyectil nuevoProyectil = Instantiate(proyectilprefab, origenProyectil.position, Quaternion.AngleAxis(angle, Vector3.forward)); 
+            Proyectil nuevoProyectil = Instantiate(proyectilprefab, origenProyectil.position, Quaternion.AngleAxis(angle, Vector3.forward));
+            GetComponent<AudioSource>().Play();
 
             //Asignar el gameObject del enemigo al proyectil
             nuevoProyectil.objetivo = other.gameObject;
