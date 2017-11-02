@@ -88,10 +88,12 @@
     <Compile Include="Assets\Script\BotonTorre.cs" />
     <Compile Include="Assets\Script\Coyos.cs" />
     <Compile Include="Assets\Script\InicioJuego.cs" />
+    <Compile Include="Assets\Script\Jugador.cs" />
     <Compile Include="Assets\Script\LogicaPonerTorre.cs" />
     <Compile Include="Assets\Script\Meta.cs" />
     <Compile Include="Assets\Script\PoolingUnidades.cs" />
     <Compile Include="Assets\Script\Proyectil.cs" />
+    <Compile Include="Assets\Script\Reset.cs" />
     <Compile Include="Assets\Script\Torre.cs" />
     <Compile Include="Assets\Script\Unidad.cs" />
   </ItemGroup>
