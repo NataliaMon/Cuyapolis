@@ -13,6 +13,7 @@ public class BotonTorre : MonoBehaviour {
 
         // Verificar que tenemos suficiente oro para construir esta torre
         if (Jugador.oro >= torre.costoOro) {
+
             Instantiate(torreObject, transform.parent.position, Quaternion.identity);
             Destroy(transform.parent.gameObject);
 
