@@ -9,6 +9,7 @@ public class Torre : MonoBehaviour {
     private float cooldownTimer = 0;
     private bool puededisparar = true;
     public Transform origenProyectil;
+    public int costoOro;
 
 
     private void OnTriggerStay2D(Collider2D other)

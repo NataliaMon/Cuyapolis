@@ -211,6 +211,7 @@ MonoBehaviour:
     type: 2}
   cooldown: 1
   origenProyectil: {fileID: 4303884169555214}
+  costoOro: 80
 --- !u!212 &212968699008827090
 SpriteRenderer:
   m_ObjectHideFlags: 1

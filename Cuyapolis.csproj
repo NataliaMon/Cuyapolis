@@ -86,7 +86,6 @@
     <Compile Include="Assets\Script\BotonInicio.cs" />
     <Compile Include="Assets\Script\BotonPlay.cs" />
     <Compile Include="Assets\Script\BotonTorre.cs" />
-    <Compile Include="Assets\Script\Coyos.cs" />
     <Compile Include="Assets\Script\InicioJuego.cs" />
     <Compile Include="Assets\Script\Jugador.cs" />
     <Compile Include="Assets\Script\LogicaPonerTorre.cs" />

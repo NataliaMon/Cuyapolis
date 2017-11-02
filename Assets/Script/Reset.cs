@@ -5,7 +5,8 @@ using UnityEngine;
 public class Reset : MonoBehaviour {
 
 	void Start () {
-        Jugador.vidas = 5;	
+        Jugador.vidas = 5;
+        Jugador.oro = 150;
 	}
 	
 }

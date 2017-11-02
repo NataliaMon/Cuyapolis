@@ -11,6 +11,7 @@ public class Unidad : MonoBehaviour {
     public float vel = 1;
     private float distancia_punto = 0.1f;
     public int vida;
+    public int oro;
     Animator animator;
   
 
@@ -51,9 +52,9 @@ public class Unidad : MonoBehaviour {
         // Si la vida es igual a cero se destruye este gameobject unidad
         if (vida <= 0)
         {
+            Jugador.oro += oro;
             PoolingUnidades.unidades.Remove(transform.parent.gameObject);
             Destroy(transform.parent.gameObject);
-
         }
 
         

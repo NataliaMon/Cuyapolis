@@ -9,9 +9,11 @@ public class Jugador : MonoBehaviour {
     public static int oro;
 
     public Text textoVidas;
+    public Text textoOro;
 
     void Update() {
         textoVidas.text = vidas.ToString();
+        textoOro.text = oro.ToString();
 
         if (vidas <= 0) {
             SceneManager.LoadScene("GameOver");

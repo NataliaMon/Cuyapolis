@@ -7,6 +7,7 @@ public class Proyectil : MonoBehaviour {
     public GameObject objetivo;
     public float velocidad = 1f;
     public float distanciaUmbral = 0.1f;
+    public int poderAtaque;
 
 	// Update is called once per frame
 	void Update () {
@@ -27,7 +28,7 @@ public class Proyectil : MonoBehaviour {
                 Destroy(this.gameObject);
 
                 //Se resta 1 a la variable vida de la componente Unidad del gameobject enemigo
-                objetivo.GetComponent<Unidad>().vida -= 1;
+                objetivo.GetComponent<Unidad>().vida -= poderAtaque;
                 
             }
 
